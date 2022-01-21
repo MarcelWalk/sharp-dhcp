@@ -46,3 +46,8 @@
     - Acknowledge
 - IP Address Release Procedure
     - Release
+
+## Ports Used
+- UDP
+    - 67 (Client)
+    - 68 (Server)
