@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hNBKCuxtUDqQTwUITFR4P744fDKuJa/u6wlZaEK+QriwD2l1wccTR0yKj3J9Z/atAKsyIm4QupzA23IRIV8yZw==",
+  "success": true,
+  "projectFilePath": "/home/mwalk/src/sharp-dhcp/sharp-dhcp.csproj",
+  "expectedPackageFiles": [
+    "/home/mwalk/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
