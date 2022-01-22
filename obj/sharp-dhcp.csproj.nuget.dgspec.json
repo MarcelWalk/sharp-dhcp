@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/mwalk/src/sharp-dhcp/sharp-dhcp.csproj",
         "projectName": "sharp-dhcp",
         "projectPath": "/home/mwalk/src/sharp-dhcp/sharp-dhcp.csproj",
-        "packagesPath": "/home/mwalk/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/mwalk/src/sharp-dhcp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mwalk/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

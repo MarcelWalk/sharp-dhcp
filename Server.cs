@@ -7,20 +7,25 @@ namespace sharpdhcp
 {
     public class Server
     {
-        private const int listenPort = 68;
+        private const int listenPort = 67;
+
+        private bool _isListening = false;
+        private CancellationToken _callationToken;
+
         public event EventHandler<MessageReceivedArgs> MessageReceived;
 
-        private void StartListener()
+        public async Task<bool> StartListener()
         {
             UdpClient listener = new UdpClient(listenPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
+            _isListening = true;
 
             try
             {
-                while (true)
+                while (_isListening)
                 {
-                    byte[] bytes = listener.Receive(ref groupEP);
-                    OnMessageReceived(new MessageReceivedArgs(){Data = bytes});
+                    var recieveResult = await listener.ReceiveAsync();
+                    OnMessageReceived(new MessageReceivedArgs() { Data = recieveResult.Buffer, Endpoint = recieveResult.RemoteEndPoint });
                 }
             }
             catch (SocketException e)
@@ -31,6 +36,13 @@ namespace sharpdhcp
             {
                 listener.Close();
             }
+
+            return true;
+        }
+
+        public void StopListener()
+        {
+            _isListening = false;
         }
 
         protected virtual void OnMessageReceived(MessageReceivedArgs e)

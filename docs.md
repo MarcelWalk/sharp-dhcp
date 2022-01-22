@@ -13,11 +13,13 @@
     - What Is A Octet
 - [Understanding the Basic Operations of DHCP](https://www.netmanias.com/en/post/techdocs/5998/dhcp-network-protocol/understanding-the-basic-operations-of-dhcp)
     - Message Formats (Including Release)
-- [RFC2131](https://datatracker.ietf.org/doc/html/rfc2131#section-2)
+- [RFC2131 - DHCP](https://datatracker.ietf.org/doc/html/rfc2131#section-2)
     - Technical Documentation
     - Message Format
     - Message Section Sizes
     - Description Of Message Contents
+- [RFC1533 - Options](https://datatracker.ietf.org/doc/html/rfc1533)
+- [Commonly Used Options](https://service.snom.com/display/wiki/DHCP+options)
 
 ## Message Types / Operations
 - Discovery
