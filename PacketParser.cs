@@ -2,9 +2,9 @@ namespace sharpdhcp
 {
     public static class PacketParser
     {
-        public static DhcpHeaderPacket ParseHeader(byte[] data)
+        public static DhcpPacket ParsePackage(byte[] data)
         {
-            return new DhcpHeaderPacket()
+            return new DhcpPacket()
             {
                 Op = data[0],
                 Htype = data[1],
@@ -20,7 +20,8 @@ namespace sharpdhcp
                 Chaddr = data[28..44],
                 Sname = data[44..108],
                 File = data[108..236],
-                MagicCookie = data[236..240]
+                MagicCookie = data[236..240],
+                Options = data[240..]
             };
         }
     }

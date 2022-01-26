@@ -23,7 +23,7 @@
         static void MessageReceived(object sender, MessageReceivedArgs args)
         {
             Console.WriteLine(args.Endpoint.Address.ToString());
-            var dhcpHeaderPacket = PacketParser.ParseHeader(args.Data);
+            var dhcpHeaderPacket = PacketParser.ParsePackage(args.Data);
             System.Console.WriteLine($"OP: {dhcpHeaderPacket.Op}");
             System.Console.WriteLine($"HTYPE: {dhcpHeaderPacket.Htype}");
             System.Console.WriteLine($"HLEN: {dhcpHeaderPacket.Hlen}");

@@ -20,6 +20,7 @@
     - Description Of Message Contents
 - [RFC1533 - Options](https://datatracker.ietf.org/doc/html/rfc1533)
 - [Commonly Used Options](https://service.snom.com/display/wiki/DHCP+options)
+- [How To Test A DHCP Server](https://serverfault.com/questions/171744/command-line-program-to-test-dhcp-service)
 
 ## Message Types / Operations
 - Discovery
